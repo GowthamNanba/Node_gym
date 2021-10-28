@@ -1,0 +1,65 @@
+###
+POST http://localhost:6000/api/add_master_workout
+Content-Type: application/json
+
+{
+    "name":"PushUps",
+    "description":"For Arms and Chest",
+    "purpose":"Upper Body",
+    "trainer_id":"6172509b419750a742cecf01"
+}
+
+###
+POST http://localhost:6000/api/add_master_meal
+Content-Type: application/json
+
+{
+    "name":"Boiled Chicken",
+    "description":"Warm Water",
+    "purpose":"Remove Fat",
+    "trainer_id":"6172509b419750a742cecf01"
+}
+
+###
+POST http://localhost:6000/api/add_master_assessment
+Content-Type: application/json
+
+{
+    "name":"Question 1",
+    "description":"What is Fitness",
+    "trainer_id":"6172509b419750a742cecf01"
+}
+
+
+###
+POST http://localhost:6000/api/user_meal_add
+Content-Type: application/json
+
+{
+    "name":"Meal 3",
+    "type":"Dinner 3",
+    "description":" Peper,Fresh Vegatable",
+    "purpose":"Weight Gaining",
+    "trainer_id":"6172509b419750a742cecf01",
+    "user_id":"6172545f1503b8bbb33c4160"
+}
+
+
+###
+POST http://localhost:6000/api/user_workout_add
+Content-Type: application/json
+
+{
+    "name":"Mornging 100 pushups",
+    "type":"Dinner",
+    "description":" Peper,Fresh Vegatable",
+    "purpose":"Weight Gaining",
+    "trainer_id":"6172509b419750a742cecf01",
+    "user_id":"6172fb27a0cf946b0aa767be"
+}
+
+###
+GET http://localhost:6000/api/get_day_meal/6172545f1503b8bbb33c4160/2021-10-24
+Content-Type: application/json
+
+####

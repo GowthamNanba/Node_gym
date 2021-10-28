@@ -1,0 +1,89 @@
+###
+POST http://localhost:6000/api/add_trainer
+Content-Type: application/json
+
+{
+    "name":"Trainer Two",
+    "mobile":"8608743143",
+    "email":"trainer@gmail.com"
+}
+//Add New Trainer
+
+###
+POST http://localhost:6000/api/add_user
+Content-Type: application/json
+
+{
+    "name":"Client 4",
+    "mobile":"897654321",
+    "email":"client4@gmail.com",
+    "pass":"password3",
+    "trainer_id":"6172fb14a0cf946b0aa767bc"
+}
+// User Create
+
+###
+POST http://localhost:6000/api/user_login
+Content-Type: application/json
+
+{
+    "mail_id":"client4@gmail.com",
+    "pass":"password3",
+    "mobile":"897654321"
+}
+
+
+###
+POST http://localhost:6000/api/trainer_login
+Content-Type: application/json
+
+{
+    "mail_id":"client@gmail.com",
+    "pass":"password3",
+    "mobile":"897654321"
+}
+
+###
+GET http://localhost:6000/api/get_trainer
+Content-Type: application/json
+
+####
+
+
+###
+GET http://localhost:6000/api/get_trainer/6172fb14a0cf946b0aa767bc
+Content-Type: application/json
+
+####
+
+###
+GET http://localhost:6000/api/get_trainer_users/6172509b419750a742cecf01
+Content-Type: application/json
+
+####
+
+
+###
+GET http://localhost:6000/api/get_user
+Content-Type: application/json
+
+####
+
+
+###
+GET http://localhost:6000/api/get_user/6172fb27a0cf946b0aa767be
+Content-Type: application/json
+
+####
+
+
+###
+GET http://localhost:6000/api/get_old_trainer
+Content-Type: application/json
+
+####
+
+
+###
+GET http://localhost:6000/api/mingle
+Content-Type: application/json
